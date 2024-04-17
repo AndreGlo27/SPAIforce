@@ -1,0 +1,637 @@
+/* ----------
+global 
+ ---------- */
+
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+$font-jakarta-plus: "Plus Jakarta Sans", sans-serif;
+$background-wish-blue: linear-gradient(
+  88.76deg,
+  #18d4f1 12.36%,
+  #2577dd 73.63%
+);
+
+section {
+  padding-bottom: 40px;
+  padding-top: 40px;
+}
+
+.section-title {
+  justify-content: center;
+  justify-self: center;
+  align-self: center;
+  padding: 40px 0 40px 0;
+  h3 {
+    text-align: center;
+    font-size: 44px;
+    font-weight: 700;
+    font-family: "inter", sans-serif;
+    span {
+      color: transparent;
+      background-image: linear-gradient(
+        45deg,
+        rgba(24, 212, 241, 1) 0%,
+        rgba(37, 119, 221, 1) 100%
+      );
+      -webkit-background-clip: text;
+      background-clip: text;
+    }
+  }
+  p {
+    text-align: center;
+    color: rgba(153, 153, 153, 1);
+    font-family: $font-jakarta-plus;
+    font-size: 14px;
+    font-weight: 400;
+  }
+}
+.section-title h2 {
+  text-align: center;
+}
+
+* {
+  scroll-behavior: smooth;
+  scroll-margin: 50px;
+}
+
+* {
+  font-family: "Inter", sans-serif;
+}
+
+@media screen and (max-width: 768px) {
+  [data-aos-delay] {
+    transition: 0 !important;
+  }
+}
+.mini-info {
+  margin-bottom: 12px;
+  background: linear-gradient(
+    86.47deg,
+    rgba(41, 231, 231, 0.2) -3.64%,
+    rgba(32, 41, 255, 0.2) 99.64%
+  );
+  padding: 5px 8px 5px 8px;
+  border: 5px;
+  border-radius: 8px;
+  img {
+    margin-right: 4px;
+    width: 14px;
+  }
+  h6 {
+    color: rgba(56, 76, 255, 1);
+    margin: 0;
+    font-size: 14px;
+  }
+}
+
+/* ----------
+ header 
+ ---------- */
+
+.navbar .nav-item .active,
+.nav-link:focus {
+  color: rgb(180, 118, 2);
+}
+
+.topbar-scrolled {
+  background-color: black !important;
+  transition: background-color 0.25s;
+}
+
+.navbar {
+  // padding-bottom: 10px;
+  // justify-content: center;
+  background-color: rgb(65, 65, 65, 0);
+  a {
+    color: white;
+    font-family: $font-jakarta-plus;
+    font-weight: 700;
+  }
+  img {
+    width: 96.89px;
+    height: 48px;
+  }
+  .navbar-nav {
+    .nav-item {
+      .reach a {
+        background: $background-wish-blue;
+        border-radius: 100px;
+        padding: 8px 16px;
+        &:hover {
+          color: white;
+        }
+      }
+      .active {
+        color: transparent;
+        background-image: linear-gradient(
+          45deg,
+          rgba(24, 212, 241, 1) 0%,
+          rgba(37, 119, 221, 1) 100%
+        );
+        -webkit-background-clip: text;
+        background-clip: text;
+      }
+      :hover {
+        color: transparent;
+        background-image: linear-gradient(
+          45deg,
+          rgba(24, 212, 241, 1) 0%,
+          rgba(37, 119, 221, 1) 100%
+        );
+        -webkit-background-clip: text;
+        background-clip: text;
+      }
+    }
+  }
+}
+
+/* ----------
+about us
+ ---------- */
+#aboutus {
+  .title-aboutus {
+    .mini-info {
+      margin-bottom: 12px;
+    }
+    h3 {
+      font-size: 36px;
+      padding-bottom: 30px;
+      font-weight: 700;
+      span {
+        color: transparent;
+        background-image: linear-gradient(
+          45deg,
+          rgba(24, 212, 241, 1) 0%,
+          rgba(37, 119, 221, 1) 100%
+        );
+        -webkit-background-clip: text;
+        background-clip: text;
+      }
+    }
+    p {
+      font-family: "Plus Jakarta Sans", sans-serif;
+      font-size: 14px;
+      font-weight: 400;
+    }
+  }
+}
+
+/* ----------
+why choose us
+ ---------- */
+.whychooseus {
+  .card {
+    background: rgba(255, 255, 255, 0.5);
+    box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.1);
+    border: none;
+    border-radius: 24px;
+    &:hover {
+      // TODO: Box Shadow Miring
+      box-shadow: 0 0 24px 0 rgba(194, 194, 194, 0.3);
+      transform: rotate(3deg);
+      transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+    }
+    img {
+      width: 56px;
+      height: 56px;
+      margin-bottom: 16px;
+    }
+    h4 {
+      font-family: "Inter", sans-serif;
+      font-size: 18px;
+      font-weight: 700;
+      margin-bottom: 12px;
+    }
+    p {
+      font-family: "Plus Jakarta Sans", sans-serif;
+      font-size: 16px;
+      font-weight: 500;
+    }
+  }
+  // .card {
+  //   width: 360px;
+  //   height: 260px;
+  //   background: rgba(255, 255, 255, 0.5);
+  //   box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.1);
+  //   border: none;
+  //   border-radius: 24px;
+  //   padding: 20px 20px 30px 20px;
+  //   &:hover {
+  //     box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.3);
+  //   }
+  // }
+  // .choose-item {
+  //   display: flex;
+  //   flex-direction: column;
+  //   justify-content: center;
+  //   align-items: center;
+  //   p {
+  //     text-align: center;
+  //     font-size: 16px;
+  //     font-family: "Plus Jakarta Sans", sans-serif;
+  //   }
+  // }
+}
+/* ----------
+what we do
+ ---------- */
+#whatwedo {
+  .whatwedo-text {
+    padding-left: 150px;
+    padding-right: 50px;
+    h3 {
+      padding-bottom: 40px;
+      color: white;
+    }
+    p {
+      color: white;
+    }
+  }
+
+  .nav-link {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    max-width: 200px;
+    white-space: normal;
+    text-align: center;
+    color: black;
+    font-weight: 400;
+    &.active {
+      position: relative;
+      background-color: transparent !important;
+      font-weight: 700;
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        width: 50%;
+        height: 5px;
+        background: linear-gradient(88.76deg, #18d4f1 12.36%, #2577dd 73.63%);
+        transform: translateX(-50%);
+        border-radius: 20px;
+      }
+    }
+  }
+}
+.nav {
+  flex-wrap: wrap;
+  max-width: 100%;
+  text-align: center;
+}
+
+.whatwedo .row {
+  .simple-list-example {
+    padding-bottom: 30px;
+  }
+}
+#pills-home {
+  background-image: url("../source/Image/content-1.png");
+}
+/* ----------
+our expertize
+ ---------- */
+.ourexpertize {
+  .section-title h3 {
+    text-align: left;
+  }
+  .card {
+    height: 100%;
+    border-radius: 12px;
+    background: rgba(255, 255, 255);
+    box-shadow: 0 0 24px 0 #0000001a;
+    border: none;
+    z-index: 2;
+    // padding: 15px 15px 15px 15px;
+    font-family: "Inter", sans-serif;
+    &:hover {
+      box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.3);
+    }
+    h4 {
+      font-size: 18px;
+      font-weight: 700;
+      padding-top: 12px;
+    }
+    .card-body p {
+      color: rgba(153, 153, 153, 1);
+      font-size: 14px;
+    }
+  }
+}
+
+/* ----------
+technologies
+ ---------- */
+.technologies {
+  background-color: #f1faff;
+  p {
+    font-size: 16px;
+    font-weight: 400;
+    font-family: "Inter", sans-serif;
+  }
+}
+.simple-list-example-scrollspy .active {
+  background-color: none;
+  color: black;
+  font-size: 50px;
+  font-weight: 700;
+  &::after {
+    content: "\2192";
+    margin-left: 16px;
+  }
+}
+
+.technologies a {
+  color: rgb(163, 163, 163, 0.8);
+  font-weight: 400;
+  font-size: 48px;
+  text-decoration: none;
+  span {
+    padding-left: 20px;
+  }
+}
+
+#simple-list-item-1,
+#simple-list-item-2,
+#simple-list-item-3,
+#simple-list-item-4 {
+  img {
+    width: 50%;
+    height: inherit;
+    margin-bottom: 12px;
+  }
+
+  .col-lg-4 img {
+    margin-bottom: 56px;
+  }
+}
+.technologies p {
+  padding-bottom: 60px;
+}
+#simple-list-example {
+  pointer-events: none;
+  opacity: 1;
+}
+/* ----------
+best project
+ ---------- */
+.bestproject h2 {
+  font-weight: 700;
+  font-size: 36px;
+  padding-bottom: 12px;
+}
+.bestproject .row {
+  padding-bottom: 40px;
+  justify-content: center;
+  align-items: center;
+  p {
+    font-size: 14px;
+  }
+}
+.bestproject-category {
+  display: flex;
+  padding-bottom: 16px;
+}
+
+.bestproject-category h5 {
+  color: rgba(56, 76, 255, 1);
+  font-size: 14px;
+  margin: 0;
+  padding: 5px 10px;
+  border-radius: 8px;
+  margin-right: 5px;
+  background: linear-gradient(
+    86.47deg,
+    rgba(41, 231, 231, 0.2) -3.64%,
+    rgba(32, 41, 255, 0.2) 99.64%
+  );
+}
+
+.bestproject .project-image:hover img {
+  transform: scale(1.1, 1.1);
+}
+.bestproject .project-image img {
+  border-radius: 20px;
+  transition: all ease-in-out 0.3s;
+  transform-origin: center;
+  width: 100%;
+}
+
+/* ----------
+client
+ ---------- */
+.ourclient {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .client-pict {
+    margin: 0 auto;
+  }
+  .col-lg-3 {
+    padding-bottom: 32px;
+  }
+}
+
+/* ----------
+career
+ ---------- */
+.career {
+  p {
+    font-size: 14px;
+    padding-bottom: 32px;
+  }
+  .career-item {
+    // padding-bottom: 8px;
+    img {
+      transform: translate(50%, 0);
+    }
+    h5 {
+      // position: absolute;
+      font-weight: 700;
+      margin-top: 20px;
+      font-size: 14px;
+    }
+    p {
+      color: rgba(153, 153, 153, 1);
+      font-size: 12px;
+      font-weight: 400;
+    }
+  }
+}
+/* ----------
+jobvacancy
+ ---------- */
+.jobvacancy {
+  margin-top: -80px;
+  h6 {
+    font-size: 26px;
+    font-weight: 700;
+    padding-bottom: 24px;
+  }
+  label {
+    font-size: 14px;
+    font-weight: 500;
+  }
+}
+
+.jobvacancy,
+.contactus {
+  .filter {
+    padding-bottom: 20px;
+  }
+  .submit {
+    font-size: 16px;
+    font-weight: 700;
+    border: none;
+    border-radius: 20px;
+    background: linear-gradient(
+      45deg,
+      rgba(24, 212, 241, 1) 0%,
+      rgba(37, 119, 221, 1) 100%
+    );
+    color: white;
+    padding: 8px 0 8px 0;
+  }
+  .cancel {
+    color: transparent;
+    background-image: linear-gradient(
+      45deg,
+      rgba(24, 212, 241, 1) 0%,
+      rgba(37, 119, 221, 1) 100%
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 20px;
+    border: none;
+    padding: 8px 0 8px 0;
+  }
+}
+.jobvacancy .career-card-link {
+  text-decoration: none;
+  .career-card {
+    color: black;
+    background: rgb(236, 236, 236, 0.9);
+    // padding: 10px 5px 5px 30px;
+    padding: 16px 16px 16px 16px;
+    border-radius: 20px;
+  }
+}
+// .jobvacancy .career-card-link:hover {
+//   text-decoration: none;
+//   .career-card {
+//     color: black;
+//     background: rgb(236, 236, 236);
+//     // padding: 10px 5px 5px 30px;
+//     padding: 16px 16px 16px 16px;
+//     border-radius: 7px;
+//   }
+// }
+
+.jobvacancy .career-card {
+  overflow: hidden;
+  h4 {
+    font-size: 16px;
+    font-weight: 700;
+  }
+  p {
+    font-size: 14px;
+    font-weight: 400;
+  }
+}
+
+.icon-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  img {
+    width: 24px;
+  }
+}
+
+/* ----------
+contact us
+ ---------- */
+.contactus {
+  background-image: url("../source/Image/contact-us-1.png");
+  color: rgb(255, 255, 255);
+  padding-bottom: 83px;
+  .jobtype {
+    display: flex;
+  }
+  h4 {
+    font-size: 14px;
+    font-weight: 700;
+    padding-bottom: 16px;
+  }
+  input {
+    padding-bottom: 12px;
+  }
+}
+
+.contactus .jobtype {
+  margin-bottom: 24px;
+  h5 {
+    color: rgb(255, 255, 255);
+    font-size: 12px;
+    font-weight: 400;
+    margin: 0;
+    padding: 5px 10px;
+    margin-right: 5px;
+    border: 0.1px solid #ffffff;
+    margin-bottom: 8px;
+  }
+}
+
+.control {
+  border: none; /* Menghilangkan border default */
+  border-bottom: 1px solid rgb(255, 255, 255); /* Membuat garis bawah hitam */
+  outline: none;
+  background: none;
+  color: white;
+  &::placeholder {
+    color: white;
+  }
+}
+.attrachment {
+  display: flex;
+  img {
+    height: 24px;
+    width: 24px;
+    margin-left: 12px;
+  }
+  p {
+    padding-left: 16px;
+  }
+}
+/* ----------
+footer
+ ---------- */
+#footer {
+  background-color: rgb(0, 0, 0);
+  color: white;
+  z-index: 1;
+  padding: 30px 0 30px 0;
+  justify-content: center;
+  h5 {
+    font-size: 18px;
+    font-weight: 700;
+  }
+  p,
+  span {
+    font-size: 14px;
+    font-weight: 400;
+  }
+  .footer-info {
+    display: flex;
+    img {
+      margin-top: 3px;
+      margin-right: 12px;
+    }
+    p {
+      font-size: 14px;
+      font-weight: 400;
+    }
+  }
+}

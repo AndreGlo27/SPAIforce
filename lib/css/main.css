@@ -1,0 +1,726 @@
+@charset "UTF-8";
+/* ----------
+global 
+ ---------- */
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+section {
+  padding-bottom: 40px;
+  padding-top: 40px;
+}
+
+.section-title {
+  justify-content: center;
+  justify-self: center;
+  align-self: center;
+  padding: 40px 0 40px 0;
+}
+.section-title h3 {
+  text-align: center;
+  font-size: 44px;
+  font-weight: 700;
+  font-family: "inter", sans-serif;
+}
+.section-title h3 span {
+  color: transparent;
+  background-image: linear-gradient(45deg, rgb(24, 212, 241) 0%, rgb(37, 119, 221) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+.section-title p {
+  text-align: center;
+  color: rgb(153, 153, 153);
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.section-title h2 {
+  text-align: center;
+}
+
+* {
+  scroll-behavior: smooth;
+  scroll-margin: 50px;
+}
+
+* {
+  font-family: "Inter", sans-serif;
+}
+
+@media screen and (max-width: 768px) {
+  [data-aos-delay] {
+    transition: 0 !important;
+  }
+}
+.mini-info {
+  margin-bottom: 12px;
+  background: linear-gradient(86.47deg, rgba(41, 231, 231, 0.2) -3.64%, rgba(32, 41, 255, 0.2) 99.64%);
+  padding: 5px 8px 5px 8px;
+  border: 5px;
+  border-radius: 8px;
+}
+.mini-info img {
+  margin-right: 4px;
+  width: 14px;
+}
+.mini-info h6 {
+  color: rgb(56, 76, 255);
+  margin: 0;
+  font-size: 14px;
+}
+
+/* ----------
+ header 
+ ---------- */
+.navbar .nav-item .active,
+.nav-link:focus {
+  color: rgb(180, 118, 2);
+  font-weight: bold!important;
+}
+
+.topbar-scrolled {
+  background-color: black !important;
+  transition: background-color 0.25s;
+}
+
+.navbar {
+  background-color: rgba(65, 65, 65, 0);
+}
+.navbar a {
+  color: white;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 700;
+}
+.navbar img {
+  width: 96.89px;
+  height: 48px;
+}
+.navbar .navbar-nav .nav-item .reach a {
+  background: linear-gradient(88.76deg, #18d4f1 12.36%, #2577dd 73.63%);
+  border-radius: 100px;
+  padding: 8px 16px;
+}
+.navbar .navbar-nav .nav-item .reach a:hover {
+  color: white;
+  font-weight: 800!important;
+}
+.navbar .navbar-nav .nav-item .active {
+  color: transparent;
+  background-image: linear-gradient(45deg, rgb(24, 212, 241) 0%, rgb(37, 119, 221) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  font-weight: 800!important;
+}
+.navbar .navbar-nav .nav-item :hover {
+  color: transparent;
+  background-image: linear-gradient(45deg, rgb(24, 212, 241) 0%, rgb(37, 119, 221) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  font-weight: 800!important;
+}
+
+/* ----------
+about us
+ ---------- */
+
+ #aboutus {
+  margin-top: 140px;
+ }
+#aboutus .title-aboutus .mini-info {
+  margin-bottom: 12px;
+}
+#aboutus .title-aboutus h3 {
+  font-size: 40px;
+  padding-bottom: 30px;
+  font-weight: 700;
+}
+#aboutus .title-aboutus h3 span {
+  color: transparent;
+  background-image: linear-gradient(45deg, rgb(24, 212, 241) 0%, rgb(37, 119, 221) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+#aboutus .title-aboutus p {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+/* ----------
+why choose us
+ ---------- */
+.whychooseus .card {
+ 
+  box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.1);
+  border: none;
+  border-radius: 24px;
+  transition: transform 0.3s ease;
+  z-index: 1000;
+}
+.whychooseus .card-body{
+  background-color: #fff;
+  border-radius: 24px;
+}
+
+
+.whychooseus .card img {
+  width: 56px;
+  height: 56px;
+  margin-bottom: 16px;
+}
+.whychooseus .card h4 {
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+.whychooseus .card p {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+/* ----------
+what we do
+ ---------- */
+#whatwedo .whatwedo-text {
+  padding-left: 150px;
+  padding-right: 50px;
+  padding-top: 16px;
+  margin-top: 62px;
+}
+#whatwedo .whatwedo-text h3 {
+  padding-bottom: 40px;
+  color: white;
+  font-weight: 800;
+  font-size: 36px!important;
+}
+#whatwedo .whatwedo-text p {
+  color: white;
+  font-size: 16px!important;
+}
+#whatwedo .nav-link {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  max-width: 200px;
+  white-space: normal;
+  text-align: center;
+  color: black;
+  font-weight: 400;
+}
+#whatwedo .nav-link.active {
+  position: relative;
+  background-color: transparent !important;
+  font-weight: 700;
+}
+#whatwedo .nav-link.active::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 50%;
+  height: 5px;
+  background: linear-gradient(88.76deg, #18d4f1 12.36%, #2577dd 73.63%);
+  transform: translateX(-50%);
+  border-radius: 20px;
+}
+
+.nav {
+  flex-wrap: wrap;
+  max-width: 100%;
+  text-align: center;
+}
+
+.whatwedo .row .simple-list-example {
+  padding-bottom: 30px;
+}
+
+#pills-home {
+  background-image: url("../source/Image/Image_satu_620.png");
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 600px;
+  background-size: cover;
+  overflow: hidden;
+  background-position: center;
+}
+#pills-profile {
+  background-image: url("../source/Image/Image_dua_620.png");
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 600px;
+  background-size: cover;
+}
+#pills-contact {
+  background-image: url("../source/Image/Image_tiga_620.png");
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 600px;
+  background-size: cover;
+}
+#pills-disabled {
+  background-image: url("../source/Image/Image_empat_620.png");
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 600px;
+  background-size: cover;
+}
+
+/* ----------
+our expertize
+ ---------- */
+.ourexpertize .section-title h3 {
+  text-align: center;
+}
+.ourexpertize .card {
+  height: 100%;
+  border-radius: 12px;
+  background: rgb(255, 255, 255);
+  box-shadow: 0px 2px 24px 0px rgba(0, 0, 0, 0.12);
+  border: none;
+  z-index: 2;
+  font-family: "Inter", sans-serif;
+  transition: transform 0.5s ease!important;
+}
+.ourexpertize .card:hover {
+  transform: translateY(-20px)!important;
+}
+.ourexpertize .card h4 {
+  font-size: 18px;
+  font-weight: 700;
+  padding-top: 12px;
+}
+.ourexpertize .card .card-body p {
+  color: rgb(153, 153, 153);
+  font-size: 14px;
+}
+
+/* ----------
+technologies
+ ---------- */
+.technologies {
+  background-color: #f1faff;
+}
+.technologies p {
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Inter", sans-serif;
+}
+
+
+.simple-list-example-scrollspy .active {
+  background-color: none;
+  color: black;
+  font-size: 50px;
+  font-weight: 700;
+}
+.simple-list-example-scrollspy .active::after {
+  content: "→";
+  margin-left: 16px;
+}
+
+.technologies a {
+  color: rgba(163, 163, 163, 0.8);
+  font-weight: 400;
+  font-size: 48px;
+  text-decoration: none;
+}
+.technologies a span {
+  padding-left: 20px;
+}
+
+#simple-list-item-1 img,
+#simple-list-item-2 img,
+#simple-list-item-3 img,
+#simple-list-item-4 img {
+  width: 50%;
+  height: inherit;
+  margin-bottom: 12px;
+}
+#simple-list-item-1 .col-lg-4 img,
+#simple-list-item-2 .col-lg-4 img,
+#simple-list-item-3 .col-lg-4 img,
+#simple-list-item-4 .col-lg-4 img {
+  margin-bottom: 56px;
+}
+
+.technologies p {
+  padding-bottom: 40px;
+}
+
+#simple-list-example {
+  opacity: 1;
+}
+
+#simple-list-example > a:hover{
+  cursor: pointer;
+}
+/* ----------
+best project
+ ---------- */
+.bestproject h2 {
+  font-weight: 700;
+  font-size: 36px;
+  padding-bottom: 12px;
+}
+
+.bestproject .row {
+  padding-bottom: 40px;
+  justify-content: center;
+  align-items: center;
+}
+.bestproject .row p {
+  font-size: 14px;
+}
+
+.bestproject-category {
+  display: flex;
+  padding-bottom: 16px;
+}
+
+.bestproject-category h5 {
+  color: rgb(56, 76, 255);
+  font-size: 14px;
+  margin: 0;
+  padding: 5px 10px;
+  border-radius: 8px;
+  margin-right: 5px;
+  background: linear-gradient(86.47deg, rgba(41, 231, 231, 0.2) -3.64%, rgba(32, 41, 255, 0.2) 99.64%);
+}
+
+.bestproject .project-image:hover img {
+  transform: scale(1.1, 1.1);
+}
+
+.bestproject .project-image img {
+  border-radius: 20px;
+  transition: all ease-in-out 0.3s;
+  transform-origin: center;
+  width: 100%;
+}
+
+/* ----------
+client
+ ---------- */
+.ourclient {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+}
+.ourclient .client-pict {
+  margin: 0 auto;
+}
+.ourclient .col-lg-3 {
+  padding-bottom: 32px;
+}
+
+/* ----------
+career
+ ---------- */
+
+.career p {
+  font-size: 14px;
+  padding-bottom: 32px;
+}
+.career .career-item img {
+  transform: translate(50%, 0);
+}
+.career .career-item h5 {
+  font-weight: 700;
+  margin-top: 20px;
+  font-size: 14px;
+}
+.career .career-item p {
+  color: rgb(153, 153, 153);
+  font-size: 12px;
+  font-weight: 400;
+}
+
+/* ----------
+jobvacancy
+ ---------- */
+.jobvacancy {
+  margin-top: -80px;
+}
+.jobvacancy h6 {
+  font-size: 26px;
+  font-weight: 700;
+  padding-bottom: 24px;
+}
+.jobvacancy label {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.jobvacancy .filter,
+.contactus .filter {
+  padding-bottom: 20px;
+}
+.jobvacancy .submit,
+.contactus .submit {
+  font-size: 16px;
+  font-weight: 700;
+  border: none;
+  border-radius: 20px;
+  background: linear-gradient(45deg, rgb(24, 212, 241) 0%, rgb(37, 119, 221) 100%);
+  color: white;
+  padding: 8px 0 8px 0;
+}
+.jobvacancy .cancel,
+.contactus .cancel {
+  color: transparent;
+  background-image: linear-gradient(45deg, rgb(24, 212, 241) 0%, rgb(37, 119, 221) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  font-size: 16px;
+  font-weight: 700;
+  border-radius: 20px;
+  border: none;
+  padding: 8px 0 8px 0;
+}
+
+.jobvacancy .career-card-link {
+  text-decoration: none;
+}
+.jobvacancy .career-card-link .career-card {
+  color: black;
+  background: #fff!important;
+  border: 1px solid #E8E8E8;
+  padding: 16px 16px 16px 16px;
+  border-radius: 20px;
+  width: 100%;
+}
+
+.jobvacancy .career-card {
+  overflow: hidden;
+}
+.jobvacancy .career-card h4 {
+  font-size: 16px;
+  font-weight: 700;
+}
+.jobvacancy .career-card p {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.icon-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.icon-container img {
+  width: 24px;
+}
+
+/* ----------
+contact us
+ ---------- */
+
+.contactus .jobtype {
+  display: flex;
+}
+.contactus h4 {
+  font-size: 14px;
+  font-weight: 700;
+  padding-bottom: 16px;
+}
+.contactus input {
+  padding-bottom: 12px;
+}
+
+.contactus .jobtype {
+  margin-bottom: 24px;
+}
+.contactus .jobtype h5 {
+  color: rgb(255, 255, 255);
+  font-size: 12px;
+  font-weight: 400;
+  margin: 0;
+  padding: 5px 10px;
+  margin-right: 5px;
+  border: 0.1px solid #ffffff;
+  margin-bottom: 8px;
+}
+
+.control {
+  border: none; /* Menghilangkan border default */
+  border-bottom: 1px solid rgb(255, 255, 255); /* Membuat garis bawah hitam */
+  outline: none;
+  background: none;
+  color: white;
+}
+.control::-moz-placeholder {
+  color: white;
+}
+.control::placeholder {
+  color: white;
+}
+
+.attrachment {
+  display: flex;
+}
+.attrachment img {
+  height: 24px;
+  width: 24px;
+  margin-left: 12px;
+}
+.attrachment p {
+  padding-left: 16px;
+}
+
+/* ----------
+footer
+ ---------- */
+#footer {
+  background-color: rgb(0, 0, 0);
+  color: white;
+  z-index: 1;
+  padding: 30px 0 30px 0;
+  justify-content: center;
+}
+
+#footer a{
+  display: block;
+  text-decoration: none;
+  color: #fff;
+  padding-bottom: 10px;
+}
+#footer a:hover{
+  color: transparent;
+  background-image: linear-gradient(45deg, rgb(24, 212, 241) 0%, rgb(37, 119, 221) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+#footer a:active{
+  color: transparent;
+  background-image: linear-gradient(45deg, rgb(24, 212, 241) 0%, rgb(37, 119, 221) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+#footer h5 {
+  font-size: 18px;
+  font-weight: 700;
+}
+#footer a,
+#footer span {
+  font-size: 14px;
+  font-weight: 400;
+}
+#footer .footer-info {
+  display: flex;
+}
+#footer .footer-info img {
+  margin-top: 3px;
+  margin-right: 12px;
+}
+#footer .footer-info p {
+  font-size: 14px;
+  font-weight: 400;
+}/*# sourceMappingURL=main.css.map */
+
+
+@media only screen and (max-width: 1290px) and (min-width: 1280px) {
+  .contact-element{
+    padding-left: 38px!important;
+    padding-top: 0px!important;
+    padding-right: 158px!important;
+    margin-left: 160px;
+  
+  }
+  .mt-5new{
+    margin-top: 2rem!important;
+  }
+}
+
+@media only screen and (max-width: 1708px) and (min-width: 1700px) {
+  .contact-element{
+    padding-left: 118px!important;
+    padding-top: 70px!important;
+  
+    margin-left: 160px;
+  }
+}
+@media only screen and (max-width: 1425px) and (min-width: 1200px) {
+  #whatwedo .whatwedo-text {
+    padding-left: 150px;
+    padding-right: 50px;
+    padding-top: 0px;
+  }
+
+  .btn-slider1 {
+    padding-top: 0;
+    margin-top: -25px;
+  }
+
+  #whatwedo .whatwedo-text h3 {
+    padding-bottom: 10px;
+    padding-top: 20px;
+  }
+  #whatwedo .whatwedo-text h3:nth-child(2) {
+    padding-bottom: 10px;
+    padding-top: 40px;
+  }
+  .btn-slider2{
+    padding-top: 0;
+    margin-top: 30px;
+  }
+  .contact-element{
+    padding-right: 240px!important;
+    padding-top: 45px;
+    padding-left: 108px;
+    padding-bottom: 3px;
+    margin-left: 160px;
+  }
+  .contact-text-left {
+    line-height: 55px;
+}
+.tag-contactus{
+  padding-top: 15px;
+}
+}
+
+@media only screen and (max-width: 1900px) and (min-width: 1800px) {
+  .contact-element{
+    padding-right: 240px!important;
+    padding-top: 100px;
+    padding-left: 108px;
+    padding-bottom: 3px;
+    margin-left: 160px;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .contact-element{
+    padding-right: 240px!important;
+    padding-top: 60px;
+    padding-left: 108px;
+    padding-bottom: 3px;
+   
+  }
+}
+
+@media only screen and (max-width: 1366px) and (min-width:1200px) {
+  .contact-element{
+    padding-right: 240px!important;
+    width: 100%;
+    padding-top: 20px !important;
+    padding-left: 68px;
+    padding-bottom: 3px;
+    
+    
+  }
+
+  .contact-text-left{
+    width: 500px;
+
+  }
+ .contact-text-right{
+  margin-left: 80px;
+ 
+ }
+ .btnContactUs{
+  margin-left: 70px;
+ }
+}
+
