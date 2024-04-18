@@ -266,6 +266,55 @@ what we do
   background-size: cover;
 }
 
+@media (max-width: 800px) {
+ 
+  #whatwedo-desktop{
+    display: none;
+  }
+
+  .tab-content{
+    display: none;
+  }
+  .carousel-inner {
+    height: 700px !important;
+  }
+  .carousel-indicators button{
+    
+      height: 10px !important;
+      width: 10px !important;
+      border-radius: 100% !important;
+      background-color:grey !important;
+    
+  }
+
+  .carousel-indicators button.active{
+    width: 35px !important;
+    border-radius: 13px !important;
+    background: linear-gradient(88.76deg, #18d4f1 12.36%, #2577dd 73.63%);
+    background-clip: padding-box;
+    
+    transition: opacity .6s ease;
+
+    
+  }
+
+  .carousel-item.card{
+    padding: 3vw !important;
+    border: none !important;
+    
+  }
+
+  .carousel-item.card img{
+    border-radius: 20px 20px 0 0 !important;
+  }
+}
+@media (min-width: 800px) {
+  /* desktop CSS: hide .mobile div */
+  #whatwedo-mobile {
+    display: none
+  }
+}
+
 /* ----------
 our expertize
  ---------- */

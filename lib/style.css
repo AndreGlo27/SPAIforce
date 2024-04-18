@@ -586,4 +586,8 @@ line-height: 36px!important;
     display: block!important;
   }
   
+  .dotdot-aboutus-left, .dotdot2, .dotdot3,.dotdot4,.dotdot5{
+    z-index: -1;
+  }
+
 }
