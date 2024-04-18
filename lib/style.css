@@ -480,12 +480,11 @@ line-height: 36px!important;
 
   html {
     scrollbar-width: none;
-    overflow-x: hidden;
+    overflow-x: hidden !important;
   }
 
   body {
     overflow-x: hidden !important;
-
   }
 
   #hero h1 {
