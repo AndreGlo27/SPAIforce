@@ -355,6 +355,42 @@ technologies
 #simple-list-example > a:hover{
   cursor: pointer;
 }
+
+@media (max-width: 800px) {
+  /* mobile CSS: hide .desktop div */
+  #tech-type-large {
+    display: none
+  }
+  #tech-list-desktop{
+    display: none
+  }
+
+  #simple-list-item-1 ,
+  #simple-list-item-2 ,
+  #simple-list-item-3 ,
+  #simple-list-item-4 {
+    .p-1{
+      color: black;
+      font-weight: 700;
+      margin-top: 5vw;
+    }
+    
+  }
+  .section-title {
+    padding: 0;
+  }
+
+  .technologies p {
+    padding-bottom: 0;
+}
+}
+@media (min-width: 800px) {
+  /* desktop CSS: hide .mobile div */
+  #tech-list-mobile {
+    display: none
+  }
+}
+
 /* ----------
 best project
  ---------- */

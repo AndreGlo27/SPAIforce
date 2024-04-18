@@ -402,6 +402,23 @@ line-height: 36px!important;
   width: 20px;
   height: 20px;
 }
+
+.career-p{
+  width: 75%;
+}
+
+@media only screen and (max-width: 768px) {
+.career-p{
+  width: 100%;
+}
+.career-con{
+  padding: 0 3vw;
+}
+.carrer-text{
+  width: 100%;
+}
+}
+
 #bg-client-career{
   background-image: url("../lib/source/Image/bg-client.png");
   width: 100%;
