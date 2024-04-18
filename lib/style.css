@@ -116,6 +116,8 @@ body {
 .content-animate .item.text-in{
 	display: block!important;
 	animation: textIn .5s ease;
+  margin: 0;
+  width: 100%;
 }
 .content-animate .item.text-out{
 	animation: textOut 1s ease;
